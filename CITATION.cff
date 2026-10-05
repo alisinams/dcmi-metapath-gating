@@ -6,12 +6,14 @@ abstract: "Source code, result files and figure scripts for density-corrected mu
 authors:
   - given-names: Alisina
     family-names: Mousavi
+    orcid: "https://orcid.org/0009-0003-8480-7134"
     affiliation: "Department of Computer Engineering, Islamic Azad University, Zanjan Branch, Zanjan, Iran"
   - given-names: Mahdi
     family-names: Bazargani
+    orcid: "https://orcid.org/0000-0001-7018-0332"
     affiliation: "Department of Computer Engineering, Islamic Azad University, Zanjan Branch, Zanjan, Iran"
-version: 1.0.0
-doi: 10.5281/zenodo.23155898
+version: 1.0.1
+doi: 10.5281/zenodo.23156316
 date-released: 2026-10-05
 license: MIT
 repository-code: "https://github.com/alisinams/dcmi-metapath-gating"
