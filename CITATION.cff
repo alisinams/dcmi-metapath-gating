@@ -4,13 +4,15 @@ type: software
 title: "Code and results for: Correcting connectivity bias in meta-path gating for heterogeneous graph neural recommender systems"
 abstract: "Source code, result files and figure scripts for density-corrected mutual information (DCMI), a meta-path scoring statistic that references a plug-in mutual information estimate against an ensemble of degree-preserving surrogate graphs, and for MIDGaP, a heterogeneous graph recommender whose meta-path gate is anchored to the DCMI prior and whose variational bottleneck is trained jointly with a ranking loss. Includes dataset construction, the estimator, nine baselines, full-catalogue evaluation, ablations, the sampled-versus-full protocol study, the uncertainty analysis and per-seed and per-user results."
 authors:
-  - given-names: Ali Sina
+  - given-names: Alisina
     family-names: Mousavi
     affiliation: "Department of Computer Engineering, Islamic Azad University, Zanjan Branch, Zanjan, Iran"
   - given-names: Mahdi
     family-names: Bazargani
     affiliation: "Department of Computer Engineering, Islamic Azad University, Zanjan Branch, Zanjan, Iran"
 version: 1.0.0
+doi: 10.5281/zenodo.23155898
+date-released: 2026-10-05
 license: MIT
 repository-code: "https://github.com/alisinams/dcmi-metapath-gating"
 keywords:

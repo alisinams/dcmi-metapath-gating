@@ -1,10 +1,10 @@
 # Correcting connectivity bias in meta-path gating for heterogeneous graph neural recommender systems
 
 Code, result files and figure scripts for the manuscript of the same title by
-Mahdi Bazargani and Ali Sina Mousavi (Department of Computer Engineering, Islamic Azad University,
+Mahdi Bazargani and Alisina Mousavi (Department of Computer Engineering, Islamic Azad University,
 Zanjan Branch, Zanjan, Iran).
 
-<!-- The Zenodo DOI badge is added here after the first archived release. -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23155898.svg)](https://doi.org/10.5281/zenodo.23155898)
 
 ## Overview
 
@@ -145,5 +145,10 @@ datasets remain under the terms of their distributors.
 
 ## Citation
 
-Please cite the archived release of this repository (see `CITATION.cff`; GitHub's "Cite this repository"
-button produces APA and BibTeX entries) and the article once it is published.
+Please cite the archived release of this repository and the article once it is published:
+
+> Mousavi A, Bazargani M (2026) Code and results for: Correcting connectivity bias in meta-path gating for
+> heterogeneous graph neural recommender systems (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.23155898
+
+Version 1.0.0 is the release used for the manuscript; https://doi.org/10.5281/zenodo.23155897 always resolves to
+the latest version. GitHub's "Cite this repository" button (from `CITATION.cff`) produces APA and BibTeX entries.
