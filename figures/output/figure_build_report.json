@@ -1,0 +1,152 @@
+[
+ {
+  "figure": 1,
+  "stem": "Figure_1",
+  "qc": "passed",
+  "print_scale": 0.7,
+  "min_text_pt": 7.0,
+  "masters": [
+   "Figure_1_white.pdf",
+   "Figure_1_white.tiff",
+   "Figure_1_white.png",
+   "Figure_1_transparent.pdf",
+   "Figure_1_transparent.tiff",
+   "Figure_1_transparent.png"
+  ],
+  "journal": {
+   "scale": 0.6929,
+   "width_mm": 174.0,
+   "height_mm": 77.8,
+   "pixels": [
+    4110,
+    1837
+   ]
+  },
+  "palette": "ASE file RULES/Ocean Sunset.ase",
+  "title": "MIDGaP pipeline",
+  "script": "fig1_pipeline.py",
+  "data": "none (schematic)",
+  "encodes": "schematic; solid = forward pass, dotted = training-time KL anchor, dashed = inference-time sampling",
+  "exceptions": "diagram: no data axes, 2 pt outlines on boxes (SVIS 6, 11)"
+ },
+ {
+  "figure": 2,
+  "stem": "Figure_2",
+  "qc": "passed",
+  "print_scale": 0.712,
+  "min_text_pt": 8.5,
+  "masters": [
+   "Figure_2_white.pdf",
+   "Figure_2_white.tiff",
+   "Figure_2_white.png",
+   "Figure_2_transparent.pdf",
+   "Figure_2_transparent.tiff",
+   "Figure_2_transparent.png"
+  ],
+  "journal": {
+   "scale": 0.7048,
+   "width_mm": 174.0,
+   "height_mm": 140.4,
+   "pixels": [
+    4110,
+    3317
+   ]
+  },
+  "palette": "ASE file RULES/Ocean Sunset.ase",
+  "title": "Gate priors by criterion",
+  "script": "fig2_gate_priors.py",
+  "data": "cache/<dataset>_dcmi.json through code/dcmi.py gate_prior()",
+  "encodes": "prior weight per meta-path; deterministic, no error bars",
+  "exceptions": "horizontal bars so that meta-path names stay horizontal (SVIS 7.3)"
+ },
+ {
+  "figure": 3,
+  "stem": "Figure_3",
+  "qc": "passed",
+  "print_scale": 0.712,
+  "min_text_pt": 8.5,
+  "masters": [
+   "Figure_3_white.pdf",
+   "Figure_3_white.tiff",
+   "Figure_3_white.png",
+   "Figure_3_transparent.pdf",
+   "Figure_3_transparent.tiff",
+   "Figure_3_transparent.png"
+  ],
+  "journal": {
+   "scale": 0.7048,
+   "width_mm": 174.0,
+   "height_mm": 77.3,
+   "pixels": [
+    4111,
+    1827
+   ]
+  },
+  "palette": "ASE file RULES/Ocean Sunset.ase",
+  "title": "Gate criteria versus the free gate",
+  "script": "fig3_gate_criteria.py",
+  "data": "results/ablation_gate_<dataset>.jsonl",
+  "encodes": "bars = mean over n = 3 seeds; error bars = 1 SD; circles = seeds; dashed line = free-gate mean",
+  "exceptions": "none"
+ },
+ {
+  "figure": 4,
+  "stem": "Figure_4",
+  "qc": "passed",
+  "print_scale": 0.712,
+  "min_text_pt": 8.5,
+  "masters": [
+   "Figure_4_white.pdf",
+   "Figure_4_white.tiff",
+   "Figure_4_white.png",
+   "Figure_4_transparent.pdf",
+   "Figure_4_transparent.tiff",
+   "Figure_4_transparent.png"
+  ],
+  "journal": {
+   "scale": 0.7048,
+   "width_mm": 174.1,
+   "height_mm": 70.4,
+   "pixels": [
+    4112,
+    1662
+   ]
+  },
+  "palette": "ASE file RULES/Ocean Sunset.ase",
+  "title": "Accuracy by user-activity quintile",
+  "script": "fig4_activity_quintiles.py",
+  "data": "results/per_user_npz/<dataset>_<model>_s<seed>.npz, results/train_activity.json",
+  "encodes": "line = mean over n = 5 seeds; band = 1 SD; quintiles of training activity among evaluated users",
+  "exceptions": "independent y scales across panels, all from zero (SVIS 7.4 exception, stated in caption)"
+ },
+ {
+  "figure": 5,
+  "stem": "Figure_5",
+  "qc": "passed",
+  "print_scale": 0.712,
+  "min_text_pt": 8.5,
+  "masters": [
+   "Figure_5_white.pdf",
+   "Figure_5_white.tiff",
+   "Figure_5_white.png",
+   "Figure_5_transparent.pdf",
+   "Figure_5_transparent.tiff",
+   "Figure_5_transparent.png"
+  ],
+  "journal": {
+   "scale": 0.7048,
+   "width_mm": 174.0,
+   "height_mm": 73.1,
+   "pixels": [
+    4110,
+    1727
+   ]
+  },
+  "palette": "ASE file RULES/Ocean Sunset.ase",
+  "title": "Predictive variance diagnostic",
+  "script": "fig5_uncertainty.py",
+  "data": "results/uncertainty_ml1m.json, results/per_user_npz/ml1m_LightGCN_s<seed>.npz",
+  "encodes": "(a) mean +/- 1 SD across users per decile; (b) mean +/- t-based 95% CI per decile",
+  "exceptions": "single-series panels: no legend (SVIS 8, level 1)"
+ }
+]

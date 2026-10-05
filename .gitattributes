@@ -1,0 +1,7 @@
+* text=auto
+*.npz binary
+*.pkl binary
+*.pdf binary
+*.png binary
+*.tif binary
+*.eps binary

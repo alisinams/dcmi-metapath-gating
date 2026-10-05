@@ -1,0 +1,11 @@
+# Versions of the environment that produced the result files (Python 3.13.1, CUDA 12.8, NVIDIA RTX 3090).
+torch==2.11.0
+numpy==2.4.6
+scipy==1.17.1
+scikit-learn==1.9.0
+pandas==2.3.3
+requests==2.34.2
+# figures
+matplotlib==3.11.0
+pillow==12.2.0
+pymupdf==1.28.0

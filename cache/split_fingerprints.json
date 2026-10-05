@@ -1,0 +1,570 @@
+{
+ "amazon": {
+  "/R:pattern": [
+   "exact",
+   "cb1558b1bf5706b8061cab6bbef91ec1f1854fab9015db82dd9cf4022773c62c"
+  ],
+  "/R:shape": [
+   "exact",
+   "(38216, 13196)"
+  ],
+  "/R:values": [
+   "float",
+   "0790c1eee9c862650439c727ad0c9451025835588f182efcb6c94994ab2fc500"
+  ],
+  "/feat_i": [
+   "float",
+   "aafcb562b69a30c7a70ece3ffc6fc584c2d9cedae18ee84a119b534b39c871b8 (13196, 64)"
+  ],
+  "/feat_u": [
+   "float",
+   "50a989ef2137a44b081d6b9ba100fe916e9b10ecc00d81ea100953fbafee3c8f (38216, 64)"
+  ],
+  "/mp_i/I-B-I:pattern": [
+   "exact",
+   "7f9f96b85ce5271e42e84429950b996d24f72a5dd1df126319045cd8052eaba2"
+  ],
+  "/mp_i/I-B-I:shape": [
+   "exact",
+   "(13196, 13196)"
+  ],
+  "/mp_i/I-B-I:values": [
+   "float",
+   "4a2d5c875c4af8423466ae964bca50181120d618b5b093b6d8141b593abcd33c"
+  ],
+  "/mp_i/I-C-I:pattern": [
+   "exact",
+   "95d172264347b1785a7cdbcab26deb214f45228d3e651bfff6544422aa7e4ac8"
+  ],
+  "/mp_i/I-C-I:shape": [
+   "exact",
+   "(13196, 13196)"
+  ],
+  "/mp_i/I-C-I:values": [
+   "float",
+   "758bac8314e19a8180caaa3dfa62906ece52bdf831281e79fe63d7a589f1ba9c"
+  ],
+  "/mp_i/I-U-I:pattern": [
+   "exact",
+   "0cad0cb4ad23fc57dab899148e15fd254b82e42f74491651e4cedf2bf497e43a"
+  ],
+  "/mp_i/I-U-I:shape": [
+   "exact",
+   "(13196, 13196)"
+  ],
+  "/mp_i/I-U-I:values": [
+   "float",
+   "8781ec355edd57452eca8f3a9b1d790f4cf91a50c706fb1663708459cf382304"
+  ],
+  "/mp_u/U-I-U:pattern": [
+   "exact",
+   "a5270d4806ea3fc10d60db00a5ce284dda08fcaedca0d62250517c2eff3a852b"
+  ],
+  "/mp_u/U-I-U:shape": [
+   "exact",
+   "(38216, 38216)"
+  ],
+  "/mp_u/U-I-U:values": [
+   "float",
+   "7661f8ba509a4a0888b4272ff8e4a134c507ddbbd39b9f94a7ade07800a95b84"
+  ],
+  "/n_items": [
+   "exact",
+   "13196"
+  ],
+  "/n_users": [
+   "exact",
+   "38216"
+  ],
+  "/name": [
+   "exact",
+   "amazon"
+  ],
+  "/rd_i/I-B-I": [
+   "float",
+   "0.01379"
+  ],
+  "/rd_i/I-C-I": [
+   "float",
+   "0.158799"
+  ],
+  "/rd_i/I-U-I": [
+   "float",
+   "0.0109559"
+  ],
+  "/rd_u/U-I-U": [
+   "float",
+   "0.0217995"
+  ],
+  "/split": [
+   "exact",
+   "temporal"
+  ],
+  "/test": [
+   "exact",
+   "f8398d55c84465f09f89f30595cffada06a415cb5cc54af7b22e055a0d0d9c28 (5004, 2)"
+  ],
+  "/train": [
+   "exact",
+   "3f4b4cc146228849d487bea020db433c2d89286114501f90f5dbedc5b0dbfde2 (243246, 2)"
+  ],
+  "/valid": [
+   "exact",
+   "69df816bbb24af8aae4c69d437f070782aa503489b65bd45c9879e0b363759ae (15179, 2)"
+  ]
+ },
+ "lastfm": {
+  "/R:pattern": [
+   "exact",
+   "29553a9121af7d57d828ffea0ce473c9ad2df051be5a86064b86e2cebb13f1c8"
+  ],
+  "/R:shape": [
+   "exact",
+   "(1859, 2823)"
+  ],
+  "/R:values": [
+   "float",
+   "beb8ad44002dfe907f10a674be71389c5362487b90316ca234579dc0a4828caf"
+  ],
+  "/feat_i": [
+   "float",
+   "f2ba533c5ab85bf60ea797aecd6a40eebc60f9e3e0206dd4d54f2c03582942ec (2823, 64)"
+  ],
+  "/feat_u": [
+   "float",
+   "ad8f8c0168285126da516ae38406953323c382e162256ac1d2a0ab449b8810bc (1859, 64)"
+  ],
+  "/mp_i/A-T-A:pattern": [
+   "exact",
+   "e77e17b48d762208fdd3fdb5025135699b706b9db1f0be410958474357823dfa"
+  ],
+  "/mp_i/A-T-A:shape": [
+   "exact",
+   "(2823, 2823)"
+  ],
+  "/mp_i/A-T-A:values": [
+   "float",
+   "8a9d78103b36db58c8a49a85fc130c0ace3bec72880d7c86e3af0694243fc6bd"
+  ],
+  "/mp_i/A-U-A:pattern": [
+   "exact",
+   "0dbaa6cf26b4a248894f9e741809ea289651c1257db19bd4ee16267178a81613"
+  ],
+  "/mp_i/A-U-A:shape": [
+   "exact",
+   "(2823, 2823)"
+  ],
+  "/mp_i/A-U-A:values": [
+   "float",
+   "4c24ef307737567ec7a3bef0bc8c4f6abde0ca8ff294e49b2758cbe2cf5cb803"
+  ],
+  "/mp_u/U-A-U:pattern": [
+   "exact",
+   "d87b8dea08c65104b2a4b09434076f51ba92606ca6cf485fafeb40d895cd05e0"
+  ],
+  "/mp_u/U-A-U:shape": [
+   "exact",
+   "(1859, 1859)"
+  ],
+  "/mp_u/U-A-U:values": [
+   "float",
+   "c63374608ca1547958de1921761d5e44c717d32ea66f61a13e8d886ad75c7759"
+  ],
+  "/mp_u/U-F-U:pattern": [
+   "exact",
+   "765244d31ea003ff2dfdfe1e8ac7b44702c24358065481c1a40d58981e4832c7"
+  ],
+  "/mp_u/U-F-U:shape": [
+   "exact",
+   "(1859, 1859)"
+  ],
+  "/mp_u/U-F-U:values": [
+   "float",
+   "9a4ddcd058dc208f3830e9ada9f7e13346589b5d97a4ffaee3468966e7a4aaea"
+  ],
+  "/mp_u/U-T-U:pattern": [
+   "exact",
+   "ff24f1397d65d567c1c8de35fcebcf829d0ef49f2869bf72b499b94e925bbc0f"
+  ],
+  "/mp_u/U-T-U:shape": [
+   "exact",
+   "(1859, 1859)"
+  ],
+  "/mp_u/U-T-U:values": [
+   "float",
+   "67e3d63aaff08c3865da2200b49a9f9ea2b2c872d7cf0a27f444125f665cc1e4"
+  ],
+  "/n_items": [
+   "exact",
+   "2823"
+  ],
+  "/n_users": [
+   "exact",
+   "1859"
+  ],
+  "/name": [
+   "exact",
+   "lastfm"
+  ],
+  "/rd_i/A-T-A": [
+   "float",
+   "0.519731"
+  ],
+  "/rd_i/A-U-A": [
+   "float",
+   "0.0994231"
+  ],
+  "/rd_u/U-A-U": [
+   "float",
+   "0.499778"
+  ],
+  "/rd_u/U-F-U": [
+   "float",
+   "0.00723099"
+  ],
+  "/rd_u/U-T-U": [
+   "float",
+   "0.391426"
+  ],
+  "/split": [
+   "exact",
+   "random"
+  ],
+  "/test": [
+   "exact",
+   "77c4a1d093b9bf39b4068381ce5a58d8f7cb0963e00fefa674fd81954e0b883f (7195, 2)"
+  ],
+  "/train": [
+   "exact",
+   "a1ad6d77a035b8d9c51928528d49608bce1846bc709889cd27bb4f35551ebf4f (57091, 2)"
+  ],
+  "/valid": [
+   "exact",
+   "9ca43eb61baf39764a75933ff80621ef2ee024ae4bf869282d317c21c9ffcad0 (7064, 2)"
+  ]
+ },
+ "ml100k": {
+  "/R:pattern": [
+   "exact",
+   "90ac6a35b4e12e5a90d62af702b6ef2d93187f18dad7c38e8150528e67234834"
+  ],
+  "/R:shape": [
+   "exact",
+   "(887, 822)"
+  ],
+  "/R:values": [
+   "float",
+   "24f0bcac6f10c6d4b5da3873010feee50e3ccbf3c12c86401bd1f494fd94a333"
+  ],
+  "/feat_i": [
+   "float",
+   "114f34cb024aea9eb8269807fdbe991cf114ece0b949ab63cb337dcf13c8bc38 (822, 64)"
+  ],
+  "/feat_u": [
+   "float",
+   "c0ee458c1ad4f4816c756167b8e4c260936e6285d164ef716526ba5584b0c521 (887, 64)"
+  ],
+  "/mp_i/I-G-I:pattern": [
+   "exact",
+   "e0906a12c228d3fa8e8659fec81dc920c33b47f0ded9fe694eccf2e36fc23642"
+  ],
+  "/mp_i/I-G-I:shape": [
+   "exact",
+   "(822, 822)"
+  ],
+  "/mp_i/I-G-I:values": [
+   "float",
+   "24e4d669e9999455d5df6134100e99f0d743804c3e4cb4dea72b271be32dad73"
+  ],
+  "/mp_i/I-U-I:pattern": [
+   "exact",
+   "13fb0154905fbd0fb233240b125cd0c4db9a8944e740dfdc9faf5b4fd306ae5a"
+  ],
+  "/mp_i/I-U-I:shape": [
+   "exact",
+   "(822, 822)"
+  ],
+  "/mp_i/I-U-I:values": [
+   "float",
+   "664d4b3dd97cacf36d018de558273a4f0e6d81a55e426d02dfe322359dce8ad7"
+  ],
+  "/mp_i/I-Y-I:pattern": [
+   "exact",
+   "9cdcd6019e24b7b0d03b7e9d1fc850678a547fd07d8958e6e687743d2db06402"
+  ],
+  "/mp_i/I-Y-I:shape": [
+   "exact",
+   "(822, 822)"
+  ],
+  "/mp_i/I-Y-I:values": [
+   "float",
+   "9798e8c8cc776d86aff32aee9603bd2660f3adf16b9672ef04d6607191a06d90"
+  ],
+  "/mp_u/U-A-U:pattern": [
+   "exact",
+   "4c33b6d293c24b075f32720141692ceb08b2ae71e5adb2acb3cadbd532e29389"
+  ],
+  "/mp_u/U-A-U:shape": [
+   "exact",
+   "(887, 887)"
+  ],
+  "/mp_u/U-A-U:values": [
+   "float",
+   "0d662b0efc03cc1b5199e53bb796b907bd870a7ba9c0c635d795d70e4e8401a9"
+  ],
+  "/mp_u/U-G-U:pattern": [
+   "exact",
+   "2c0422a914f66e29ebc4ce49ec9c574f826d35e59ded8e93ae8c5753ace6e852"
+  ],
+  "/mp_u/U-G-U:shape": [
+   "exact",
+   "(887, 887)"
+  ],
+  "/mp_u/U-G-U:values": [
+   "float",
+   "8dc1da25c67e34f7289653304b2a4cf0e4f61f025113e7b54e0a99b2f4da1376"
+  ],
+  "/mp_u/U-I-U:pattern": [
+   "exact",
+   "edc4ba07f8f85260fb3b2291b843c3130ad7b571589a1c5867890b86b10126b5"
+  ],
+  "/mp_u/U-I-U:shape": [
+   "exact",
+   "(887, 887)"
+  ],
+  "/mp_u/U-I-U:values": [
+   "float",
+   "ee0e2528bff7add8023744665365e53888140a4cc57800bb4e910c016c3f4b34"
+  ],
+  "/mp_u/U-O-U:pattern": [
+   "exact",
+   "748c611490d5031f8f830a2f7556fb22acd8a25bd932ad80782f431f8d847ba6"
+  ],
+  "/mp_u/U-O-U:shape": [
+   "exact",
+   "(887, 887)"
+  ],
+  "/mp_u/U-O-U:values": [
+   "float",
+   "60c9a83e3c13403af856b305eb01c163ead2132c2081f6132c4235ea5051a5b7"
+  ],
+  "/n_items": [
+   "exact",
+   "822"
+  ],
+  "/n_users": [
+   "exact",
+   "887"
+  ],
+  "/name": [
+   "exact",
+   "ml100k"
+  ],
+  "/rd_i/I-G-I": [
+   "float",
+   "0.38392"
+  ],
+  "/rd_i/I-U-I": [
+   "float",
+   "0.843186"
+  ],
+  "/rd_i/I-Y-I": [
+   "float",
+   "0.284562"
+  ],
+  "/rd_u/U-A-U": [
+   "float",
+   "0.226454"
+  ],
+  "/rd_u/U-G-U": [
+   "float",
+   "0.598703"
+  ],
+  "/rd_u/U-I-U": [
+   "float",
+   "0.878348"
+  ],
+  "/rd_u/U-O-U": [
+   "float",
+   "0.0931336"
+  ],
+  "/split": [
+   "exact",
+   "leave-one-out"
+  ],
+  "/test": [
+   "exact",
+   "d27e74e8d9cd386e7b0ba56f2ed314fb69a948b2c6a2ac827f23e9643f70a35a (887, 2)"
+  ],
+  "/train": [
+   "exact",
+   "ad105da65257c0862de7b661b385d0d22fd055e4ecff6e346974deae42e74a53 (50990, 2)"
+  ],
+  "/valid": [
+   "exact",
+   "1447a07d3c453e4265ee297124abd3e689f5c14fb16a7b42b8c9be63479a0987 (887, 2)"
+  ]
+ },
+ "ml1m": {
+  "/R:pattern": [
+   "exact",
+   "812dcb146c1f3bbc3396f1546d51edff3c272cbd25991803bf96eb861252722f"
+  ],
+  "/R:shape": [
+   "exact",
+   "(5949, 2810)"
+  ],
+  "/R:values": [
+   "float",
+   "70bc111391648c86e887e41f78236782fb23dbc3d3b75f3d207ba6cef8471e0f"
+  ],
+  "/feat_i": [
+   "float",
+   "b6cb1cf3926a84d76000508e3b9570db8fede04a4319c513e345f51801cc96a5 (2810, 64)"
+  ],
+  "/feat_u": [
+   "float",
+   "dd1e8353a1a49a5f1a67862c22eebde2d6357f019ff51645d08f339a4bf81e0a (5949, 64)"
+  ],
+  "/mp_i/I-G-I:pattern": [
+   "exact",
+   "0b794556321c7c5908ca907aa6e561792972055de27be4e750a6c8cceda66ec5"
+  ],
+  "/mp_i/I-G-I:shape": [
+   "exact",
+   "(2810, 2810)"
+  ],
+  "/mp_i/I-G-I:values": [
+   "float",
+   "125ad27369170503013c297e68bf054e6f61a536ffefbd4b787e56bff391acd6"
+  ],
+  "/mp_i/I-U-I:pattern": [
+   "exact",
+   "68eba617fb055e916423f4d00cea361dfaba7cb25631da5c88937db94703470c"
+  ],
+  "/mp_i/I-U-I:shape": [
+   "exact",
+   "(2810, 2810)"
+  ],
+  "/mp_i/I-U-I:values": [
+   "float",
+   "92399936a10c6d8be725eb3ada0bb0d141404ef6458e465467974b617ed4aae1"
+  ],
+  "/mp_i/I-Y-I:pattern": [
+   "exact",
+   "3044cb89e24600b901013ab2f0521637803fd2f59de8bf4601ee65289bdb1d82"
+  ],
+  "/mp_i/I-Y-I:shape": [
+   "exact",
+   "(2810, 2810)"
+  ],
+  "/mp_i/I-Y-I:values": [
+   "float",
+   "774ea904b80a41eeb80278c47e2e524476276d7ed0540261637850c2269cccec"
+  ],
+  "/mp_u/U-A-U:pattern": [
+   "exact",
+   "0fa195efdcca703975321839456f4d97c64713dc8e277401c26014b6766941a8"
+  ],
+  "/mp_u/U-A-U:shape": [
+   "exact",
+   "(5949, 5949)"
+  ],
+  "/mp_u/U-A-U:values": [
+   "float",
+   "506e8898b0db2df166d578562e7a6af3a10826e55bd51f50a1bcb2aeac970bc8"
+  ],
+  "/mp_u/U-G-U:pattern": [
+   "exact",
+   "dc6f734ff9c5802eba3a658097a8aefc85465b4b4e0af02ccf6900c1a60cee9a"
+  ],
+  "/mp_u/U-G-U:shape": [
+   "exact",
+   "(5949, 5949)"
+  ],
+  "/mp_u/U-G-U:values": [
+   "float",
+   "9d1d06de953979bfd5c09d9476db1fa8fff4110a7198ff9d866e8114cfd7959d"
+  ],
+  "/mp_u/U-I-U:pattern": [
+   "exact",
+   "45163df51dda7e68e37eb278e0593d37af1141cb0329aa12afb6cb0e69e42acf"
+  ],
+  "/mp_u/U-I-U:shape": [
+   "exact",
+   "(5949, 5949)"
+  ],
+  "/mp_u/U-I-U:values": [
+   "float",
+   "b812ae6a45031370b657d6faf56b05107edc08466943fa193e68007a930d30f8"
+  ],
+  "/mp_u/U-O-U:pattern": [
+   "exact",
+   "405ccd368f7efe1fc1cbb506b146462894192a314b6d725a3e4cc46ce18591e7"
+  ],
+  "/mp_u/U-O-U:shape": [
+   "exact",
+   "(5949, 5949)"
+  ],
+  "/mp_u/U-O-U:values": [
+   "float",
+   "f0431965befe5de17ae1a5d8d58e8a8ea2108abc2f1c4182c7599ab5c18fec88"
+  ],
+  "/n_items": [
+   "exact",
+   "2810"
+  ],
+  "/n_users": [
+   "exact",
+   "5949"
+  ],
+  "/name": [
+   "exact",
+   "ml1m"
+  ],
+  "/rd_i/I-G-I": [
+   "float",
+   "0.336056"
+  ],
+  "/rd_i/I-U-I": [
+   "float",
+   "0.763255"
+  ],
+  "/rd_i/I-Y-I": [
+   "float",
+   "0.194476"
+  ],
+  "/rd_u/U-A-U": [
+   "float",
+   "0.213677"
+  ],
+  "/rd_u/U-G-U": [
+   "float",
+   "0.594339"
+  ],
+  "/rd_u/U-I-U": [
+   "float",
+   "0.702046"
+  ],
+  "/rd_u/U-O-U": [
+   "float",
+   "0.0748372"
+  ],
+  "/split": [
+   "exact",
+   "temporal"
+  ],
+  "/test": [
+   "exact",
+   "19112358eaa7fd45c94f5ae76a0c6e1618250fc86ae1aaf9b2835cf75a5ddd1a (42982, 2)"
+  ],
+  "/train": [
+   "exact",
+   "e88e01ebf46e4ae65d13aad5252e4effe9e0dd600003118431122bdbf8f0d574 (457226, 2)"
+  ],
+  "/valid": [
+   "exact",
+   "b1d7843b5a33204ed33c68091fd8afc8a5f6fc6449b0c1b29b1074d1a2e972dd (13560, 2)"
+  ]
+ }
+}

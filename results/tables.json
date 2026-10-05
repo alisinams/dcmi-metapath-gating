@@ -1,0 +1,1011 @@
+{
+ "tab2": {
+  "n": "2",
+  "caption": "Benchmark statistics after filtering. The split column names the protocol; median activity is the median number of training interactions per user.",
+  "header": [
+   "Dataset",
+   "Users",
+   "Items",
+   "Train",
+   "Density (%)",
+   "Meta-paths (U/I)",
+   "Valid",
+   "Test",
+   "Split",
+   "Median activity"
+  ],
+  "rows": [
+   [
+    "ML-1M",
+    "5,949",
+    "2,810",
+    "457,226",
+    "2.735",
+    "4 / 3",
+    "13,560",
+    "42,982",
+    "temporal",
+    "46"
+   ],
+   [
+    "Last.FM",
+    "1,859",
+    "2,823",
+    "57,091",
+    "1.088",
+    "3 / 2",
+    "7,064",
+    "7,195",
+    "random",
+    "33"
+   ],
+   [
+    "Amazon-VG",
+    "38,216",
+    "13,196",
+    "243,246",
+    "0.048",
+    "1 / 3",
+    "15,179",
+    "5,004",
+    "temporal",
+    "5"
+   ],
+   [
+    "ML-100K",
+    "887",
+    "822",
+    "50,990",
+    "6.993",
+    "4 / 3",
+    "887",
+    "887",
+    "leave-one-out",
+    "39"
+   ]
+  ],
+  "note": "Density is the fraction of user-item cells that carry a training interaction. The meta-path column counts the user-side and item-side relations available to the gate."
+ },
+ "tab3": {
+  "n": "3",
+  "caption": "Full-catalogue ranking accuracy, mean ± standard deviation over five seeds. Best value per column in bold. An asterisk marks a difference from MIDGaP that is significant under a two-sided Wilcoxon signed-rank test on per-user NDCG@20 with Holm correction within each dataset (α = 0.05).",
+  "header": [
+   "Method",
+   "ML-1M R@20",
+   "ML-1M NDCG@20",
+   "Last.FM R@20",
+   "Last.FM NDCG@20",
+   "Amazon-VG R@20",
+   "Amazon-VG NDCG@20"
+  ],
+  "rows": [
+   [
+    "MostPop",
+    "0.0774 ± 0.0000*",
+    "0.1662 ± 0.0000*",
+    "0.1257 ± 0.0000*",
+    "0.0852 ± 0.0000*",
+    "0.0290 ± 0.0000*",
+    "0.0154 ± 0.0000*"
+   ],
+   [
+    "ItemKNN",
+    "0.0871 ± 0.0000*",
+    "0.1698 ± 0.0000*",
+    "0.3388 ± 0.0000*",
+    "0.2534 ± 0.0000*",
+    "0.0161 ± 0.0000*",
+    "0.0079 ± 0.0000*"
+   ],
+   [
+    "BPR-MF",
+    "0.0952 ± 0.0021",
+    "0.1761 ± 0.0032",
+    "0.3069 ± 0.0030*",
+    "0.2221 ± 0.0024*",
+    "0.0150 ± 0.0015*",
+    "0.0067 ± 0.0009*"
+   ],
+   [
+    "LightGCN",
+    "0.0987 ± 0.0021*",
+    "**0.1861 ± 0.0023***",
+    "0.3712 ± 0.0022*",
+    "0.2733 ± 0.0013*",
+    "0.0341 ± 0.0015",
+    "0.0164 ± 0.0008"
+   ],
+   [
+    "SGL",
+    "**0.0998 ± 0.0018**",
+    "0.1786 ± 0.0052",
+    "0.3748 ± 0.0015",
+    "0.2795 ± 0.0029",
+    "**0.0361 ± 0.0016**",
+    "**0.0169 ± 0.0006**"
+   ],
+   [
+    "SimGCL",
+    "0.0753 ± 0.0021*",
+    "0.1301 ± 0.0028*",
+    "0.3712 ± 0.0017",
+    "0.2779 ± 0.0028",
+    "0.0333 ± 0.0018",
+    "0.0162 ± 0.0006"
+   ],
+   [
+    "XSimGCL",
+    "0.0758 ± 0.0032*",
+    "0.1177 ± 0.0079*",
+    "0.3729 ± 0.0017",
+    "0.2775 ± 0.0007",
+    "0.0348 ± 0.0018",
+    "0.0162 ± 0.0005"
+   ],
+   [
+    "HDGCN",
+    "0.0172 ± 0.0052*",
+    "0.0362 ± 0.0093*",
+    "0.0456 ± 0.0099*",
+    "0.0326 ± 0.0097*",
+    "0.0000 ± 0.0001*",
+    "0.0000 ± 0.0000*"
+   ],
+   [
+    "HDGCN + ranking loss",
+    "0.0623 ± 0.0016*",
+    "0.1366 ± 0.0046*",
+    "0.2447 ± 0.0253*",
+    "0.1820 ± 0.0181*",
+    "0.0090 ± 0.0033*",
+    "0.0035 ± 0.0014*"
+   ],
+   [
+    "MIDGaP (ours)",
+    "0.0902 ± 0.0050",
+    "0.1738 ± 0.0039",
+    "**0.3828 ± 0.0016**",
+    "**0.2833 ± 0.0016**",
+    "0.0352 ± 0.0025",
+    "0.0168 ± 0.0010"
+   ]
+  ],
+  "note": "Deterministic methods (MostPop, ItemKNN) are run once and reported with zero dispersion."
+ },
+ "tab7": {
+  "n": "7",
+  "caption": "Catalogue coverage, average recommendation popularity and the Gini index of the exposure distribution over the top-20 lists, together with the training cost on ML-1M. Lower ARP and Gini indicate less concentration on head items.",
+  "header": [
+   "Method",
+   "ML-1M cov.",
+   "ML-1M ARP",
+   "ML-1M Gini",
+   "Last.FM cov.",
+   "Last.FM ARP",
+   "Last.FM Gini",
+   "Amazon-VG cov.",
+   "Amazon-VG ARP",
+   "Amazon-VG Gini",
+   "ML-1M train (s)",
+   "Params"
+  ],
+  "rows": [
+   [
+    "MostPop",
+    "0.054",
+    "0.638",
+    "0.985",
+    "0.015",
+    "0.583",
+    "0.991",
+    "0.002",
+    "0.410",
+    "0.999",
+    "0",
+    "0"
+   ],
+   [
+    "ItemKNN",
+    "0.271",
+    "0.438",
+    "0.930",
+    "0.713",
+    "0.236",
+    "0.830",
+    "0.742",
+    "0.038",
+    "0.607",
+    "1",
+    "0"
+   ],
+   [
+    "BPR-MF",
+    "0.347",
+    "0.422",
+    "0.909",
+    "0.663",
+    "0.216",
+    "0.823",
+    "0.251",
+    "0.148",
+    "0.946",
+    "27",
+    "560,576"
+   ],
+   [
+    "LightGCN",
+    "0.245",
+    "0.477",
+    "0.943",
+    "0.682",
+    "0.205",
+    "0.802",
+    "0.161",
+    "0.260",
+    "0.983",
+    "52",
+    "560,576"
+   ],
+   [
+    "SGL",
+    "0.250",
+    "0.440",
+    "0.933",
+    "0.658",
+    "0.181",
+    "0.775",
+    "0.170",
+    "0.161",
+    "0.965",
+    "305",
+    "560,576"
+   ],
+   [
+    "SimGCL",
+    "0.608",
+    "0.219",
+    "0.742",
+    "0.732",
+    "0.155",
+    "0.728",
+    "0.231",
+    "0.126",
+    "0.944",
+    "443",
+    "560,576"
+   ],
+   [
+    "XSimGCL",
+    "0.431",
+    "0.173",
+    "0.821",
+    "0.672",
+    "0.160",
+    "0.752",
+    "0.186",
+    "0.147",
+    "0.960",
+    "170",
+    "560,576"
+   ],
+   [
+    "HDGCN",
+    "0.051",
+    "0.120",
+    "0.986",
+    "0.027",
+    "0.214",
+    "0.991",
+    "0.011",
+    "0.000",
+    "0.997",
+    "431",
+    "45,769"
+   ],
+   [
+    "HDGCN + ranking loss",
+    "0.076",
+    "0.459",
+    "0.979",
+    "0.255",
+    "0.293",
+    "0.932",
+    "0.092",
+    "0.025",
+    "0.977",
+    "621",
+    "45,769"
+   ],
+   [
+    "MIDGaP (ours)",
+    "0.199",
+    "0.540",
+    "0.966",
+    "0.681",
+    "0.204",
+    "0.795",
+    "0.266",
+    "0.123",
+    "0.927",
+    "240",
+    "577,095"
+   ]
+  ],
+  "note": "Training time is wall-clock on a single NVIDIA RTX 3090 including early stopping; parameter counts exclude frozen content features."
+ },
+ "tab4": {
+  "n": "4",
+  "caption": "The same models on ML-100K under the sampled protocol used by the earlier heterogeneous-graph literature (one positive against 99 sampled negatives) and under full-catalogue ranking. The last column is the inflation factor at rank 20.",
+  "header": [
+   "Method",
+   "HR@10 (sampled)",
+   "HR@20 (sampled)",
+   "HR@10 (full)",
+   "HR@20 (full)",
+   "Inflation"
+  ],
+  "rows": [
+   [
+    "BPR-MF",
+    "0.4750 ± 0.0086",
+    "0.6749 ± 0.0023",
+    "0.1169 ± 0.0038",
+    "0.2011 ± 0.0038",
+    "3.4"
+   ],
+   [
+    "LightGCN",
+    "0.4915 ± 0.0092",
+    "0.6949 ± 0.0093",
+    "0.1218 ± 0.0042",
+    "0.2183 ± 0.0051",
+    "3.2"
+   ],
+   [
+    "HDGCN",
+    "0.2063 ± 0.0172",
+    "0.3330 ± 0.0150",
+    "0.0410 ± 0.0098",
+    "0.0819 ± 0.0124",
+    "4.1"
+   ],
+   [
+    "MIDGaP (ours)",
+    "0.3694 ± 0.0268",
+    "0.5205 ± 0.0286",
+    "0.0891 ± 0.0083",
+    "0.1421 ± 0.0139",
+    "3.7"
+   ]
+  ],
+  "note": "Three seeds; leave-one-out split by timestamp."
+ },
+ "tab5": {
+  "n": "5",
+  "caption": "Meta-path statistics. Raw mutual information is compared against a degree-preserving null ensemble of 40 configuration-model surrogates; the z-score is the excess in units of the null standard deviation. The last two columns are the gate priors the density criterion and DCMI produce.",
+  "header": [
+   "Dataset",
+   "Meta-path",
+   "Density",
+   "MI (nats)",
+   "Null MI",
+   "z",
+   "π density",
+   "π DCMI"
+  ],
+  "rows": [
+   [
+    "ML-1M",
+    "U-I-U",
+    "0.702",
+    "0.0204",
+    "0.0211 ± 0.0006",
+    "-1.2",
+    "0.639",
+    "0.908"
+   ],
+   [
+    "ML-1M",
+    "U-O-U",
+    "0.075",
+    "0.0080",
+    "0.0130 ± 0.0006",
+    "-8.5",
+    "0.012",
+    "0.033"
+   ],
+   [
+    "ML-1M",
+    "U-A-U",
+    "0.214",
+    "0.0053",
+    "0.0116 ± 0.0006",
+    "-10.0",
+    "0.028",
+    "0.017"
+   ],
+   [
+    "ML-1M",
+    "U-G-U",
+    "0.594",
+    "0.0073",
+    "0.0118 ± 0.0006",
+    "-8.0",
+    "0.321",
+    "0.042"
+   ],
+   [
+    "ML-1M",
+    "I-U-I",
+    "0.763",
+    "0.0170",
+    "0.0024 ± 0.0002",
+    "+68.5",
+    "0.936",
+    "0.951"
+   ],
+   [
+    "ML-1M",
+    "I-G-I",
+    "0.336",
+    "0.0015",
+    "0.0005 ± 0.0001",
+    "+12.2",
+    "0.046",
+    "0.032"
+   ],
+   [
+    "ML-1M",
+    "I-Y-I",
+    "0.194",
+    "0.0004",
+    "0.0003 ± 0.0001",
+    "+2.2",
+    "0.017",
+    "0.017"
+   ],
+   [
+    "Last.FM",
+    "U-A-U",
+    "0.500",
+    "0.0703",
+    "0.0196 ± 0.0005",
+    "+96.0",
+    "0.698",
+    "0.864"
+   ],
+   [
+    "Last.FM",
+    "U-F-U",
+    "0.007",
+    "0.0370",
+    "0.0111 ± 0.0003",
+    "+77.1",
+    "0.013",
+    "0.120"
+   ],
+   [
+    "Last.FM",
+    "U-T-U",
+    "0.391",
+    "0.0409",
+    "0.0174 ± 0.0004",
+    "+57.6",
+    "0.289",
+    "0.016"
+   ],
+   [
+    "Last.FM",
+    "A-U-A",
+    "0.099",
+    "0.0690",
+    "0.0043 ± 0.0004",
+    "+161.6",
+    "0.018",
+    "0.018"
+   ],
+   [
+    "Last.FM",
+    "A-T-A",
+    "0.520",
+    "0.0652",
+    "0.0003 ± 0.0001",
+    "+831.4",
+    "0.982",
+    "0.982"
+   ],
+   [
+    "Amazon-VG",
+    "U-I-U",
+    "0.022",
+    "0.0049",
+    "0.0021 ± 0.0002",
+    "+12.1",
+    "1.000",
+    "1.000"
+   ],
+   [
+    "Amazon-VG",
+    "I-U-I",
+    "0.011",
+    "0.0041",
+    "0.0001 ± 0.0000",
+    "+96.8",
+    "0.018",
+    "0.913"
+   ],
+   [
+    "Amazon-VG",
+    "I-C-I",
+    "0.159",
+    "0.0003",
+    "0.0001 ± 0.0000",
+    "+5.7",
+    "0.963",
+    "0.017"
+   ],
+   [
+    "Amazon-VG",
+    "I-B-I",
+    "0.014",
+    "0.0028",
+    "0.0002 ± 0.0001",
+    "+38.5",
+    "0.019",
+    "0.071"
+   ]
+  ],
+  "note": "Density is the edge density of the meta-path subgraph, rescaled to the unit interval within each node side. A negative z marks a relation that predicts held-out interactions less well than a randomly rewired graph of the same density. The two prior columns sum to one within each node side."
+ },
+ "tab6": {
+  "n": "6",
+  "caption": "Ablations over three seeds. The upper block replaces the criterion that anchors the meta-path gate; the lower block removes one component at a time. Δ is the relative change against the first row of each block.",
+  "header": [
+   "Variant",
+   "ML-1M NDCG@20",
+   "ML-1M Δ (%)",
+   "Last.FM NDCG@20",
+   "Last.FM Δ (%)",
+   "Amazon-VG NDCG@20",
+   "Amazon-VG Δ (%)"
+  ],
+  "rows": [
+   [
+    "Gate criterion: DCMI (full)",
+    "0.1758 ± 0.0019",
+    "+0.0",
+    "0.2846 ± 0.0002",
+    "+0.0",
+    "0.0174 ± 0.0008",
+    "+0.0"
+   ],
+   [
+    "Gate criterion: raw MI",
+    "0.1736 ± 0.0060",
+    "-1.2",
+    "0.2867 ± 0.0022",
+    "+0.7",
+    "0.0170 ± 0.0005",
+    "-2.3"
+   ],
+   [
+    "Gate criterion: density prior",
+    "0.1734 ± 0.0047",
+    "-1.4",
+    "0.2835 ± 0.0003",
+    "-0.4",
+    "0.0169 ± 0.0000",
+    "-2.7"
+   ],
+   [
+    "Gate criterion: uniform",
+    "0.1685 ± 0.0049",
+    "-4.1",
+    "0.2835 ± 0.0005",
+    "-0.4",
+    "0.0168 ± 0.0003",
+    "-3.8"
+   ],
+   [
+    "Gate criterion: free gate",
+    "0.1620 ± 0.0030",
+    "-7.8",
+    "0.2870 ± 0.0022",
+    "+0.8",
+    "0.0173 ± 0.0010",
+    "-0.8"
+   ],
+   [
+    "Component: full",
+    "0.1692 ± 0.0051",
+    "+0.0",
+    "0.2835 ± 0.0007",
+    "+0.0",
+    "0.0173 ± 0.0009",
+    "+0.0"
+   ],
+   [
+    "Component: w/o bottleneck",
+    "0.1740 ± 0.0031",
+    "+2.9",
+    "0.2727 ± 0.0018",
+    "-3.8",
+    "0.0165 ± 0.0007",
+    "-5.1"
+   ],
+   [
+    "Component: w/o meta-paths",
+    "0.1645 ± 0.0033",
+    "-2.8",
+    "0.2746 ± 0.0011",
+    "-3.1",
+    "0.0170 ± 0.0009",
+    "-1.7"
+   ],
+   [
+    "Component: w/o content",
+    "0.1659 ± 0.0011",
+    "-2.0",
+    "0.2705 ± 0.0024",
+    "-4.6",
+    "0.0138 ± 0.0002",
+    "-20.5"
+   ],
+   [
+    "Component: w/o hard negatives",
+    "0.1830 ± 0.0003",
+    "+8.2",
+    "0.2440 ± 0.0035",
+    "-14.0",
+    "0.0161 ± 0.0009",
+    "-6.9"
+   ]
+  ],
+  "note": "The first row of each block is the same configuration, run once in each study, so the gap between them measures run-to-run variability rather than any effect."
+ },
+ "tab1": {
+  "n": "1",
+  "caption": "Representative graph recommenders along the axes that organise Section 2. Venue and year are those of the original publication. Semantics names the source of node features; the objective column names the training signal and the negatives column the scheme that supplies contrast to it; the compression column records whether an information-bottleneck term constrains the representation; the protocol column records how the original paper measured ranking accuracy. The marker n/a means the property does not apply to that method.",
+  "header": [
+   "Method",
+   "Venue",
+   "Year",
+   "Graph",
+   "Semantics",
+   "Objective",
+   "Negatives",
+   "Meta-path weighting",
+   "Compression",
+   "Uncertainty",
+   "Protocol"
+  ],
+  "rows": [
+   [
+    "BPR-MF [@bpr]",
+    "UAI",
+    "2009",
+    "none",
+    "ID",
+    "pairwise ranking",
+    "uniform",
+    "n/a",
+    "no",
+    "no",
+    "sampled"
+   ],
+   [
+    "NCF [@ncf]",
+    "WWW",
+    "2017",
+    "bipartite",
+    "ID",
+    "pointwise",
+    "uniform",
+    "n/a",
+    "no",
+    "no",
+    "sampled"
+   ],
+   [
+    "NGCF [@ngcf]",
+    "SIGIR",
+    "2019",
+    "bipartite",
+    "ID",
+    "pairwise ranking",
+    "uniform",
+    "n/a",
+    "no",
+    "no",
+    "full"
+   ],
+   [
+    "LightGCN [@lightgcn]",
+    "SIGIR",
+    "2020",
+    "bipartite",
+    "ID",
+    "pairwise ranking",
+    "uniform",
+    "n/a",
+    "no",
+    "no",
+    "full"
+   ],
+   [
+    "UltraGCN [@ultragcn]",
+    "CIKM",
+    "2021",
+    "bipartite",
+    "ID",
+    "constraint loss",
+    "uniform",
+    "n/a",
+    "no",
+    "no",
+    "full"
+   ],
+   [
+    "DirectAU [@directau]",
+    "KDD",
+    "2022",
+    "bipartite",
+    "ID",
+    "alignment/uniformity",
+    "none",
+    "n/a",
+    "no",
+    "no",
+    "full"
+   ],
+   [
+    "SGL [@sgl]",
+    "SIGIR",
+    "2021",
+    "bipartite",
+    "ID",
+    "ranking + contrastive",
+    "uniform",
+    "n/a",
+    "no",
+    "no",
+    "full"
+   ],
+   [
+    "NCL [@ncl]",
+    "WWW",
+    "2022",
+    "bipartite",
+    "ID",
+    "ranking + contrastive",
+    "uniform",
+    "n/a",
+    "no",
+    "no",
+    "full"
+   ],
+   [
+    "SimGCL [@simgcl]",
+    "SIGIR",
+    "2022",
+    "bipartite",
+    "ID",
+    "ranking + contrastive",
+    "uniform",
+    "n/a",
+    "no",
+    "no",
+    "full"
+   ],
+   [
+    "XSimGCL [@xsimgcl]",
+    "TKDE",
+    "2024",
+    "bipartite",
+    "ID",
+    "ranking + contrastive",
+    "uniform",
+    "n/a",
+    "no",
+    "no",
+    "full"
+   ],
+   [
+    "LightGCL [@lightgcl]",
+    "ICLR",
+    "2023",
+    "bipartite",
+    "ID",
+    "ranking + contrastive",
+    "uniform",
+    "n/a",
+    "no",
+    "no",
+    "full"
+   ],
+   [
+    "HCCF [@hccf]",
+    "SIGIR",
+    "2022",
+    "hypergraph",
+    "ID",
+    "ranking + contrastive",
+    "uniform",
+    "n/a",
+    "no",
+    "no",
+    "full"
+   ],
+   [
+    "DCCF [@dccf]",
+    "SIGIR",
+    "2023",
+    "bipartite",
+    "ID",
+    "disentangled contrastive",
+    "uniform",
+    "n/a",
+    "no",
+    "no",
+    "full"
+   ],
+   [
+    "HAN [@han]",
+    "WWW",
+    "2019",
+    "heterogeneous",
+    "attributes",
+    "supervised attention",
+    "n/a",
+    "learned attention",
+    "no",
+    "no",
+    "n/a"
+   ],
+   [
+    "HGT [@hgt]",
+    "WWW",
+    "2020",
+    "heterogeneous",
+    "attributes",
+    "supervised",
+    "n/a",
+    "relation parameters",
+    "no",
+    "no",
+    "n/a"
+   ],
+   [
+    "HeCo [@heco]",
+    "KDD",
+    "2021",
+    "heterogeneous",
+    "attributes",
+    "co-contrastive",
+    "in-batch",
+    "learned attention",
+    "no",
+    "no",
+    "n/a"
+   ],
+   [
+    "HDGI [@hdgi]",
+    "arXiv",
+    "2019",
+    "heterogeneous",
+    "attributes",
+    "InfoMax",
+    "corrupted view",
+    "learned attention",
+    "no",
+    "no",
+    "n/a"
+   ],
+   [
+    "KGAT [@kgat]",
+    "KDD",
+    "2019",
+    "knowledge graph",
+    "entities",
+    "pairwise ranking",
+    "uniform",
+    "n/a",
+    "no",
+    "no",
+    "full"
+   ],
+   [
+    "KGIN [@kgin]",
+    "WWW",
+    "2021",
+    "knowledge graph",
+    "entities",
+    "pairwise ranking",
+    "uniform",
+    "intent attention",
+    "no",
+    "no",
+    "full"
+   ],
+   [
+    "MCCLK [@mcclk]",
+    "SIGIR",
+    "2022",
+    "knowledge graph",
+    "entities",
+    "contrastive",
+    "uniform",
+    "cross-view",
+    "no",
+    "no",
+    "full"
+   ],
+   [
+    "CGI [@cgi]",
+    "NeurIPS",
+    "2022",
+    "bipartite",
+    "ID",
+    "IB-regularised contrastive",
+    "uniform",
+    "n/a",
+    "graph IB",
+    "no",
+    "full"
+   ],
+   [
+    "GBSR [@gbsr]",
+    "KDD",
+    "2024",
+    "social",
+    "ID",
+    "IB-regularised denoising",
+    "uniform",
+    "n/a",
+    "graph IB",
+    "no",
+    "full"
+   ],
+   [
+    "RLMRec [@rlmrec]",
+    "WWW",
+    "2024",
+    "bipartite",
+    "LLM profiles",
+    "contrastive alignment",
+    "uniform",
+    "n/a",
+    "no",
+    "no",
+    "full"
+   ],
+   [
+    "LLMRec [@llmrec]",
+    "WSDM",
+    "2024",
+    "bipartite",
+    "LLM augmentation",
+    "ranking + augmentation",
+    "LLM-augmented",
+    "n/a",
+    "no",
+    "no",
+    "full"
+   ],
+   [
+    "**MIDGaP (ours)**",
+    "this work",
+    "2026",
+    "heterogeneous",
+    "content, ID",
+    "ranking + bottleneck",
+    "dynamic hard",
+    "density-corrected MI",
+    "variational IB",
+    "yes",
+    "full"
+   ]
+  ],
+  "note": "No entry above the last row scores meta-paths by a statistic that separates the information a relation carries from the connectivity it provides. Only two other entries carry a compression term, and neither of them operates on a typed graph."
+ }
+}

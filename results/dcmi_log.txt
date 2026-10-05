@@ -1,0 +1,4 @@
+ml100k user-side prior {'U-I-U': np.float64(0.469), 'U-O-U': np.float64(0.173), 'U-A-U': np.float64(0.18), 'U-G-U': np.float64(0.178)} item-side prior {'I-U-I': np.float64(0.553), 'I-G-I': np.float64(0.222), 'I-Y-I': np.float64(0.225)}
+lastfm user-side prior {'U-A-U': np.float64(0.46), 'U-F-U': np.float64(0.326), 'U-T-U': np.float64(0.214)} item-side prior {'A-U-A': np.float64(0.469), 'A-T-A': np.float64(0.531)}
+ml1m user-side prior {'U-I-U': np.float64(0.25), 'U-O-U': np.float64(0.25), 'U-A-U': np.float64(0.25), 'U-G-U': np.float64(0.25)} item-side prior {'I-U-I': np.float64(0.569), 'I-G-I': np.float64(0.222), 'I-Y-I': np.float64(0.209)}
+amazon user-side prior {'U-I-U': np.float64(1.0)} item-side prior {'I-U-I': np.float64(0.555), 'I-C-I': np.float64(0.22), 'I-B-I': np.float64(0.226)}

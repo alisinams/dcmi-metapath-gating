@@ -1,0 +1,114 @@
+{
+ "ml1m": {
+  "LightGCN": {
+   "layers": 1
+  },
+  "SGL": {
+   "ssl": 0.05,
+   "drop": 0.1
+  },
+  "SimGCL": {
+   "ssl": 0.05,
+   "eps": 0.1
+  },
+  "XSimGCL": {
+   "ssl": 0.2,
+   "eps": 0.2
+  },
+  "BPR-MF": {},
+  "HDGCN": {
+   "gamma": 0.2
+  },
+  "HDGCN+BPR": {
+   "gamma": 0.2
+  },
+  "MIDGaP": {
+   "beta": 0.01,
+   "gamma": 1.0
+  }
+ },
+ "lastfm": {
+  "LightGCN": {
+   "layers": 2
+  },
+  "SGL": {
+   "ssl": 0.05,
+   "drop": 0.1
+  },
+  "SimGCL": {
+   "ssl": 0.05,
+   "eps": 0.1
+  },
+  "XSimGCL": {
+   "ssl": 0.05,
+   "eps": 0.1
+  },
+  "BPR-MF": {},
+  "HDGCN": {
+   "gamma": 0.05
+  },
+  "HDGCN+BPR": {
+   "gamma": 0.2
+  },
+  "MIDGaP": {
+   "beta": 0.01,
+   "gamma": 1.0
+  }
+ },
+ "amazon": {
+  "LightGCN": {
+   "layers": 1
+  },
+  "SGL": {
+   "ssl": 0.05,
+   "drop": 0.1
+  },
+  "SimGCL": {
+   "ssl": 0.05,
+   "eps": 0.1
+  },
+  "XSimGCL": {
+   "ssl": 0.05,
+   "eps": 0.1
+  },
+  "BPR-MF": {},
+  "HDGCN": {
+   "gamma": 0.05
+  },
+  "HDGCN+BPR": {
+   "gamma": 0.2
+  },
+  "MIDGaP": {
+   "beta": 0.01,
+   "gamma": 1.0
+  }
+ },
+ "ml100k": {
+  "LightGCN": {
+   "layers": 1
+  },
+  "SGL": {
+   "ssl": 0.05,
+   "drop": 0.1
+  },
+  "SimGCL": {
+   "ssl": 0.05,
+   "eps": 0.1
+  },
+  "XSimGCL": {
+   "ssl": 0.2,
+   "eps": 0.2
+  },
+  "BPR-MF": {},
+  "HDGCN": {
+   "gamma": 0.2
+  },
+  "HDGCN+BPR": {
+   "gamma": 0.2
+  },
+  "MIDGaP": {
+   "beta": 0.01,
+   "gamma": 1.0
+  }
+ }
+}
